@@ -1,0 +1,45 @@
+.viewer-section{
+  border: 1px solid @color-gray;
+  border-radius: 10px;
+  padding: 0;
+  .main-window{
+    width: 100%;
+    height: 570px;
+    .video{
+      width: 100%;
+      height: 100%;
+      background: @color-black;
+      transition: max-width .3s ease;
+    }
+    .chat{
+      width: 100%;
+      height: 100%;
+      background-color: @color-gray-light;
+      transition: max-width .3s ease;
+    }
+    &.stream-chat{
+      .video{
+        max-width: 70%;
+      }
+      .chat{
+        max-width: 30%;
+      }
+    }
+    &.stream-only{
+      .video{
+        max-width: 100%;
+      }
+      .chat{
+        max-width: 0%;
+      }
+    }
+    &.chat-only{
+      .video{
+        max-width: 0%;
+      }
+      .chat{
+        max-width: 100%;
+      }
+    }
+  }
+}
