@@ -10,14 +10,14 @@ gulp.task('less', () => {
     return gulp.src('src/less/styles.less')
         .pipe(lessGlob())
         .pipe(less())
-        .pipe(gulp.dest('dist/assets/'));
+        .pipe(gulp.dest('assets/'));
 });
 
 gulp.task('minify-css', () => {
-  return gulp.src('dist/assets/styles.css')
+  return gulp.src('assets/styles.css')
     .pipe(cleanCSS({debug: true}, (details) => {
     }))
-    .pipe(gulp.dest('dist/assets/'));
+    .pipe(gulp.dest('assets/'));
 });
 
 
