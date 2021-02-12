@@ -1,3 +1,6 @@
+[http://donordrivedemo-env.eba-9s5imahi.us-west-2.elasticbeanstalk.com/](http://donordrivedemo-env.eba-9s5imahi.us-west-2.elasticbeanstalk.com/)
+*Twitch embeds are currently not funcitonal on AWS deployment*
+
 # donor-drive-demo
 Demo page using the DD API and Twitch embeds
 
