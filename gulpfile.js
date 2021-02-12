@@ -22,3 +22,7 @@ gulp.task('minify-css', () => {
 
 
 gulp.task('styles', gulp.series(['less', 'minify-css']));
+
+gulp.task('watch', function(){
+  gulp.watch('src/less/**/*.less', gulp.series(['less', 'minify-css']));
+})
